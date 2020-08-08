@@ -167,6 +167,7 @@
 	src.chatOutput = new /datum/chatOutput(src)
 	//src.chui = new /datum/chui(src)
 
+/*
 	//Should eliminate any local resource loading issues with chui windows
 	if (!cdn && !(!address || (world.address == src.address)))
 		var/list/chuiResources = list(
@@ -181,6 +182,7 @@
 			"browserassets/css/font-awesome.css"
 		)
 		src.loadResourcesFromList(chuiResources)
+*/
 
 	if (!istype(src.mob, /mob/new_player))
 		src.loadResources()
